@@ -8,7 +8,7 @@ gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jquery-rails'
-gem 'oj'
+gem 'oj'              # для обработки json
 gem 'oj_mimic_json'
 gem 'pq'
 gem 'uglifier'
@@ -43,9 +43,7 @@ group :test do
   gem 'launchy'
   gem 'rubocop', require: false
   gem 'shoulda-matchers'
-  #gem 'chromedriver-helper'
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 
