@@ -1,0 +1,17 @@
+<ol class="breadcrumbs">
+  <li><a href="/"><%= render_breadcrumbs %></a></li>
+  <li class="active"><%= @product.title %></li>
+</ol>
+
+<br>
+<%= @product.title %>
+<br>
+<%= image_pack_tag(@product.img, alt: "", class: "img-responsive zoom-img") %>
+<br>
+price <%= @product.price %>
+
+<% if recent_products.any? %>
+  <% recent_products.each do |recently| %>
+    <h3><a href="<%= recently.id %>"><%= recently.title %></a></h3>
+  <% end %>
+<% end %>

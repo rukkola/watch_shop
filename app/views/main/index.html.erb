@@ -1,6 +1,15 @@
-<ul>
-  <li><small>@brands = <%= @brands.to_a %></small></li>
-</ul>
-<ul>
-  <li><small>@hits = <%= @hits.to_a %></small></li>
-</ul>
+
+<div class="product-one">
+  <%= @hits.hit.each do |hit| %>
+    <div class="col-md-3 product-left">
+      <div class="product-main simpleCart_shelfItem">
+        <a href="product/<%= hit.id %>" class="mask">
+          <%= image_pack_tag(hit.img, alt: "", class: "img-responsive zoom-img") %>
+        </a>
+        <div class="product-bottom">
+          <h3><a href="product/<%= hit.id %>"><%= hit.title %></a></h3>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
