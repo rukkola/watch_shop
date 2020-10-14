@@ -32,6 +32,28 @@ end
 
 # - - - - -
 
+# table categories
+
+
+women = Category.create(title: 'Women', bytitle: 'women', keywords: 'women', desc: 'for women')
+electronic2 = Category.create(title: 'Electronic', bytitle: 'electronic2', keywords: 'electronic', desc: 'electronic', parent: women)
+mechanical2 = Category.create(title: 'Mechanical', bytitle: 'mechanical2', keywords: 'mechanical', desc: 'mechanical', parent: women)
+epos = Category.create(title: 'Epos', bytitle: 'epos', keywords: 'epos', desc: 'epos', parent: electronic2)
+seiko = Category.create(title: 'Seiko', bytitle: 'seiko', keywords: 'seiko', desc: 'seiko', parent: mechanical2)
+
+men = Category.create(title: 'Men', bytitle: 'men', keywords: 'men', desc: 'for men')
+electronic1 = Category.create(title: 'Electronic', bytitle: 'electronic1', keywords: 'electronic', desc: 'electronic', parent: men)
+mechanical1 = Category.create(title: 'Mechanical', bytitle: 'mechanical1', keywords: 'mechanical', desc: 'mechanical', parent: men)
+casio = Category.create(title: 'Casio', bytitle: 'casio', keywords: 'casio', desc: 'casio', parent: mechanical1)
+citizen = Category.create(title: 'Citizen', bytitle: 'citizen', keywords: 'citizen', desc: 'citizen', parent: electronic1)
+royal = Category.create(title: 'Royal London', bytitle: 'royal-london', keywords: 'royal-london', desc: 'royal-london', parent: electronic1)
+
+kids = Category.create(title: 'Kids', bytitle: 'kids', keywords: 'kids', desc: 'for kids')
+adriatica = Category.create(title: 'Adriatica', bytitle: 'adriatica', keywords: 'adriatica', desc: 'adriatica', parent: kids)
+mechanical1 = Category.create(title: 'Anne Klein', bytitle: 'anne-klein', keywords: 'anne-klein', desc: 'anne-klein', parent: kids)
+
+# - - - - - - - -
+
 # table products
 product_attributes = [
     {

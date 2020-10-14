@@ -1,0 +1,7 @@
+<% if !@category.products.empty? %>
+  <%= @category.products.each do |product| %>
+    <%= product.title %>
+  <% end %>
+<% else %>
+  <h3>В этой категории нет товаров</h3>
+<% end %>
