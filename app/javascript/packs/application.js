@@ -9,20 +9,22 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 
-require("jquery-1.11.0.min")
-require("bootstrap.min")
-//require("packs/typeahead.bundle")
-//require("packs/jquery.easydropdown")
-//require("packs/easydrop")
-//require("packs/memenu")
-//require("packs/mem")
-//require("packs/responsiveslides.min")
-//require("packs/responsive")
-//require("packs/imagezoom")
-//require("packs/jquery.flexslider")
-//require("packs/flexs")
+require("packs/jquery-1.11.0.min")
+require("packs/bootstrap.min")
+require("packs/typeahead.bundle")
+require("packs/jquery.easydropdown")
+require("packs/easydrop")
+require("packs/memenu")
+require("packs/mem")
+require("packs/responsiveslides.min")
+require("packs/responsive")
+require("packs/imagezoom")
+require("packs/jquery.flexslider")
+require("packs/flexs")
+require("packs/my")
 
-import 'css/site.scss'
+
+//import 'css/site.scss'
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

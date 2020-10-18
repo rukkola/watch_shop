@@ -11,7 +11,7 @@
             </select>
           </div>
           <div class="box1">
-            <select tabindex="4" class="dropdown drop">
+            <select tabindex="4" class="dropdown">
               <option value="" class="label">English :</option>
               <option value="1">English</option>
               <option value="2">French</option>
@@ -19,20 +19,24 @@
             </select>
           </div>
           <div class="btn-group">
-            <a class="dropdown-toggle" data-toggle="dropdown"> Account <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu">
+
             </ul>
           </div>
           <div class="clearfix"></div>
         </div>
       </div>
       <div class="col-md-6 top-header-left">
-        <div class="cart box1">
-          <a href="/cart" onclick="getCart(); return false">
+        <div class="cart box_1">
+
+          <a href="/cart" onclick="getCart(); return false;">
             <div class="total">
+              <%= image_pack_tag('cart-1.png', alt: "") %>
+
             </div>
           </a>
-          <div class="clearfix"></div>
+          <div class="clearfix"> </div>
         </div>
       </div>
       <div class="clearfix"></div>
