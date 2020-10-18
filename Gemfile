@@ -3,11 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-gem 'ancestry' # для вложенного меню категорий
 gem 'activestorage'
+gem 'ancestry' # для вложенного меню категорий
 gem 'bootstrap-sass'
 gem 'breadcrumbs_on_rails'
 gem 'coffee-rails'
+gem 'devise'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder', '~> 2.7'
 gem 'meta-tags'
@@ -17,6 +18,7 @@ gem 'pq'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'sass-rails', '>= 6'
+gem 'simple_form' # для рендеринга devise/registrations/new
 gem 'turbolinks', '~> 5'
 gem 'uglifier'
 gem 'webpacker', '~> 4.0'
