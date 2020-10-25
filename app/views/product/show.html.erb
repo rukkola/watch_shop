@@ -112,7 +112,7 @@
               <%=
                 link_to 'ADD TO CART',
                         cart_items_path,
-                        remote: true,
+                        remote: true,  # запрос пойдет по ajax
                         data:      { method: :post , id: @product.id },
                         class:    "add-cart item_add add-to-cart-link",
                         id:       "productAdd"

@@ -67,7 +67,7 @@ body a{
 	position: relative;
 }
 .search-bar input[type="submit"] {
-    background: image_path("search.png") no-repeat 0px 0px;
+    background: asset_url("search.png") no-repeat 0px 0px;
     outline: none;
     -webkit-appearance: none;
     border: 0;
@@ -638,7 +638,7 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     font-family: 'BreeSerif-Regular';
 }
 .product-bottom h4 i {
-    background: url('/cart-2.png') no-repeat;
+    background: asset_url('cart-2.png') no-repeat;
     width: 20px;
     height: 15px;
     display: inline-block;
@@ -646,7 +646,7 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     vertical-align: middle;
 }
 .product-left:hover .product-bottom h4 i{
-	background: url('/cart-3.png') no-repeat;
+	background: asset_url('cart-3.png') no-repeat;
 }
 .product-bottom {
     text-align: left;
