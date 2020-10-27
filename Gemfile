@@ -14,6 +14,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'meta-tags'
 gem 'oj'              # для обработки json
 gem 'oj_mimic_json'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'pq'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
