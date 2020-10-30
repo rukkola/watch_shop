@@ -3,12 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+gem 'active_model_serializers'
 gem 'activestorage'
 gem 'ancestry' # для вложенного меню категорий
 gem 'bootstrap-sass'
 gem 'breadcrumbs_on_rails'
 gem 'coffee-rails'
 gem 'devise'
+gem 'doorkeeper'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder', '~> 2.7'
 gem 'meta-tags'
