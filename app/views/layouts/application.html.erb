@@ -21,7 +21,7 @@
 
     <%= render 'include/main/notifications' %>
 
-    <div class="Logo">
+    <div class="logo">
       <%= link_to root_path do %>
         <h1>Luxury Watches</h1>
       <% end %>
@@ -35,7 +35,7 @@
 
     <%= render 'include/main/footer' %>
 
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'%>
+    <script src="<%= asset_path 'application' %>"></script>
+
   </body>
 </html>

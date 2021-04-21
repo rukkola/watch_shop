@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   include Pundit
 
   def current_cart
+    #byebug
     @current_cart ||= begin
       Cart.find_or_create_by(user: current_user)
     end

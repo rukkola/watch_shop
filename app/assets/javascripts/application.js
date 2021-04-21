@@ -4,30 +4,20 @@
 // that code so it'll be compiled.
 //import '../bloodhound.min.js'
 
-/*
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
-require("jquery")
-
-require("packs/my_2")
-
-require("packs/jquery-1.11.0.min")
-require("packs/bootstrap.min")
-require("packs/typeahead.bundle")
-require("packs/jquery.easydropdown")
-require("packs/easydrop")
-require("packs/memenu")
-require("packs/mem")
-require("packs/responsiveslides.min")
-require("packs/responsive")
-require("packs/imagezoom")
-require("packs/jquery.flexslider")
-require("packs/flexs")
-
-require("packs/my")
-*/
+//  =require rails-ujs
+//  =require jquery-1.11.0.min
+//  =require bootstrap.min
+//  =require typeahead.bundle
+//  =require jquery.easydropdown
+//  =require easydrop
+//  =require memenu
+//  =require mem
+//  =require responsiveslides.min
+//  =require responsive
+//  =require imagezoom
+//  =require jquery.flexslider
+//  =require flexs
+//  =require my
 
 
 //import 'css/site.scss'
@@ -36,5 +26,5 @@ require("packs/my")
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
 //
-require.context('../images', true)
+//require.context('../images', true)
 // const imagePath = (name) => images(name, true)

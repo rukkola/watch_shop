@@ -23,7 +23,7 @@
               <div class="flexslider">
                 <ul class="slides">
                   <% @product.galleries.each do |item| %>
-                    <li data-thumb="<%= image_pack_tag item['img'] %>">
+                    <li data-thumb="<%= asset_path item['img'] %>">
                       <div class="thumb-image">
 
                         <img src="<%= asset_path item['img'] %>" data-imagezoom="true"
@@ -124,12 +124,12 @@
         </div>
         <div class="tabs">
           <ul class="menu_drop">
-            <li class="item1"><a href="#"><%= image_pack_tag 'arrow.png' %>Description</a>
+            <li class="item1"><a href="#"><%= image_tag 'arrow.png' %>Description</a>
               <ul>
                 <li class="subitem1"><a href="#"><%= @product.desc %></a></li>
               </ul>
             </li>
-            <li class="item2"><a href="#"><%= image_pack_tag 'arrow.png' %>Additional information</a>
+            <li class="item2"><a href="#"><%= image_tag 'arrow.png' %>Additional information</a>
               <ul>
                 <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
                   vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
@@ -141,7 +141,7 @@
                   sollemnes </a></li>
               </ul>
             </li>
-            <li class="item3"><a href="#"><%= image_pack_tag 'arrow.png' %>Reviews (10)</a>
+            <li class="item3"><a href="#"><%= image_tag 'arrow.png' %>Reviews (10)</a>
               <ul>
                 <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                   sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -155,7 +155,7 @@
                   quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
               </ul>
             </li>
-            <li class="item4"><a href="#"><%= image_pack_tag 'arrow.png' %>Helpful Links</a>
+            <li class="item4"><a href="#"><%= image_tag 'arrow.png' %>Helpful Links</a>
               <ul>
                 <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate
                   velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
@@ -165,7 +165,7 @@
                   quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
               </ul>
             </li>
-            <li class="item5"><a href="#"><%= image_pack_tag 'arrow.png' %>Make A Gift</a>
+            <li class="item5"><a href="#"><%= image_tag 'arrow.png' %>Make A Gift</a>
               <ul>
                 <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                   sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -191,7 +191,7 @@
                 <div class="col-md-4 product-left p-left">
                   <div class="product-main simpleCart_shelfItem">
                     <a href="<%=related.id %>" class="mask">
-                      <img class="img-responsive zoom-img" <%= image_pack_tag related.img %> />
+                      <img class="img-responsive zoom-img" <%= image_tag related.img %> />
                     </a>
                     <div class="product-bottom">
                       <h3><a href="<%= related.id %>"><%= related.title %></a></h3>
@@ -230,7 +230,7 @@
                 <div class="col-md-4 product-left p-left">
                   <div class="product-main simpleCart_shelfItem">
                     <a href="<%=recently.id %>" class="mask">
-                      <img class="img-responsive zoom-img" <%= image_pack_tag recently.img %> />
+                      <img class="img-responsive zoom-img" <%= image_tag recently.img %> />
                     </a>
                     <div class="product-bottom">
                       <h3><a href="<%=recently.id %>"><%= recently.title %></a></h3>

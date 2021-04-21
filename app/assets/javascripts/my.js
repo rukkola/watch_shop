@@ -31,6 +31,7 @@ $("#typeahead").typeahead({
 
 $('#typeahead').bind('typeahead:select', function(ev, suggestion) {
     // console.log(suggestion);
+    console.log("test");
     window.location = '/product/' + encodeURIComponent(suggestion.id);
 });
 /* - -  */
@@ -98,6 +99,8 @@ function showCart(cart) {
         $('.simpleCart_total').text('Empty Cart');
     }
 }
+
+
 
 function getCart() {
     $.ajax({

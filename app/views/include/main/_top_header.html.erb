@@ -1,3 +1,4 @@
+          
 <div class="top-header">
   <div class="container">
     <div class="top-header-main">
@@ -56,10 +57,11 @@
       </div>
       <div class="col-md-6 top-header-left">
         <div class="cart box_1">
-
-          <a href="/cart" onclick="getCart(); return false;">
+          
+            <a href="/cart" onclick="getCart(); return false;">
+          <!--   <button id="getCart"> -->
             <div class="total">
-              <%= image_pack_tag('cart-1.png', alt: "") %>
+              <%= image_tag('cart-1.png', alt: "") %>
               <% if cart_items.any? %>
                 <span class="simpleCart_total">
                   <%= format("%.2f", cart_total ) %> $
@@ -69,6 +71,7 @@
               <% end %>
 
             </div>
+           </button >
           </a>
           <div class="clearfix"> </div>
         </div>

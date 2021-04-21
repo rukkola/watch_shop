@@ -3,13 +3,13 @@
   <div  id="top" class="callbacks_container">
     <ul class="rslides" id="slider4">
       <li>
-        <%= image_pack_tag("bnr-1.jpg", alt: "" ) %>
+        <%= image_tag("bnr-1.jpg", alt: "" ) %>
       </li>
       <li>
-        <%= image_pack_tag("bnr-2.jpg", alt: "" ) %>
+        <%= image_tag("bnr-2.jpg", alt: "" ) %>
       </li>
       <li>
-        <%= image_pack_tag("bnr-3.jpg", alt: "" ) %>
+        <%= image_tag("bnr-3.jpg", alt: "" ) %>
       </li>
     </ul>
   </div>
@@ -28,7 +28,7 @@
         <% @brands.each do |i| %>
           <div class="col-md-4 about-left">
             <figure class="effect-bubba">
-              <%= image_pack_tag(i.img, alt: "", class: "img-responsive" ) %>
+              <%= image_tag(i.img, alt: "", class: "img-responsive" ) %>
               <figcaption>
                 <h2><%= i.title %></h2>
                 <p><%= i.desc %></p>
@@ -55,7 +55,7 @@
             <div class="col-md-3 product-left">
               <div class="product-main simpleCart_shelfItem">
                 <a href="product/<%=hit.id%>" class="mask">
-                  <%= image_pack_tag(hit.img, alt: "", class: "img-responsive zoom-img" ) %>
+                  <%= image_tag(hit.img, alt: "", class: "img-responsive zoom-img" ) %>
                 </a>
                 <%= %>
                 <div class="product-bottom">

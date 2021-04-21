@@ -20,7 +20,7 @@
               <% if item.product.img.nil? %>
                 <%= link_to(item.product.title, item.product) %>
               <% else %>
-                <%= link_to(image_pack_tag(item.product.img), item.product) %>
+                <%= link_to(image_tag(item.product.img), item.product) %>
               <% end %>
             </td>
             <td><%= link_to(item.product.title, item.product) %></td>
