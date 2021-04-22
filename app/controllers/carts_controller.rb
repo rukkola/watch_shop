@@ -1,5 +1,7 @@
 class CartsController < ApplicationController
 
+  skip_forgery_protection only:[:destroy]
+
   layout false
 
   def destroy

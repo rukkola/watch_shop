@@ -11,8 +11,11 @@ RSpec.describe SearchController, type: :controller do
 
     context 'search product' do
       it 'find product in do' do
-        res = JSON.parse(response.body).first.values
-        expect(res).to contain_exactly(product.title, product.id)
+        #byebug
+        #res = JSON.parse(response.body).first.values
+        #expect(res).to contain_exactly(product.title, product.id)
+        res = JSON.parse(response.body).first
+        expect([res["title"], res["id"]]).to contain_exactly(product.title, product.id)
       end
 
       it 'response with 200 ok' do
