@@ -19,6 +19,7 @@ gem 'oj'              # для обработки json
 gem 'oj_mimic_json'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "omniauth-rails_csrf_protection"
 gem 'pq'
 gem 'puma', '~> 4.1'
 gem 'pundit'
@@ -55,6 +56,10 @@ group :test do
   gem 'rubocop', require: false
   gem 'shoulda-matchers'
   gem 'webdrivers'
+end
+
+group :production do
+  gem 'pg'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

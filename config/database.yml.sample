@@ -1,7 +1,7 @@
 default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: ser
+  username: username
   password: 123456
   host: localhost
   port: 5432
@@ -15,4 +15,6 @@ test:
   database: watch_shop_test
 
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  <<: *default
+  database: watch_shop_production
+
