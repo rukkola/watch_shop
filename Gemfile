@@ -24,6 +24,7 @@ gem 'pq'
 gem 'puma', '~> 4.1'
 gem 'pundit'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
+gem 'rails_12factor'
 gem 'sass-rails', '>= 6'
 gem 'simple_form' # для рендеринга devise/registrations/new
 gem 'turbolinks', '~> 5'
