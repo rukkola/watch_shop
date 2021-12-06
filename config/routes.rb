@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'policy', to: 'policy#index'
+
   root 'main#index'
 
 end
