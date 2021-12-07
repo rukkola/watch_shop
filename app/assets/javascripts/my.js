@@ -86,7 +86,7 @@ $('#cart .modal-body').on('click', '.del-item', function(){
 });
 
 function showCart(cart) {
-    if($.trim(cart) == '<td>Cart is Empty</td>'){
+    if($.trim(cart) == '<td>Корзина пуста</td>'){
         $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display', 'none');
     }else{
         $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display', 'inline-block');
@@ -96,7 +96,7 @@ function showCart(cart) {
     if($('.cart-sum').text()){
         $('.simpleCart_total').html($('#cart .cart-sum').text());
     }else{
-        $('.simpleCart_total').text('Empty Cart');
+        $('.simpleCart_total').text('Пустая корзина');
     }
 }
 
@@ -117,7 +117,7 @@ function getCart() {
 }
 
 function showCartEmpty() {
-    var result = { error: 'Please sign in! To view the cart.' }
+    var result = { error: 'Пожалуйста войдите или зарегистрируйтесь! Для просмотра корзины.' }
     var modal = $('#cart').modal();
     $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display', 'none');
     modal.find('.modal-body').html(result.error)
