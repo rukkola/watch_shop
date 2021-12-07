@@ -1,7 +1,7 @@
 class ProductPolicy < ApplicationPolicy
 
   def show?
-    user.admin? || user.present? if user
+    true
   end
 
   class Scope < Scope
