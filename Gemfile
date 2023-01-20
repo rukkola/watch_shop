@@ -8,19 +8,19 @@ gem 'activestorage'
 gem 'ancestry' # для вложенного меню категорий
 gem 'bootstrap-sass'
 gem 'breadcrumbs_on_rails'
-gem 'byebug'
 gem 'coffee-rails'
 gem 'devise', github: 'heartcombo/devise'
 gem 'doorkeeper'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder', '~> 2.7'
 gem 'meta-tags'
+gem 'net-http'
 gem 'oj'              # для обработки json
 gem 'oj_mimic_json'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem "omniauth-rails_csrf_protection"
-gem 'pq'
+gem 'pg'
 gem 'puma', '~> 4.1'
 gem 'pundit'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
@@ -31,9 +31,9 @@ gem 'uglifier'
 gem 'webpacker', '~> 4.0'
 
 group :development, :test do
+  gem 'byebug'
   gem 'database_cleaner'
   gem 'factory_bot'
-  gem 'pg'
   gem 'pry'
   gem 'rails-controller-testing'
   gem 'rb-readline'
@@ -56,10 +56,6 @@ group :test do
   gem 'rubocop', require: false
   gem 'shoulda-matchers'
   gem 'webdrivers'
-end
-
-group :production do
-  gem 'pg'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
